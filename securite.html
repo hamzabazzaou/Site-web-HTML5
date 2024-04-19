@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="exercice html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sécurité</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar">
+      <img src="img/logo.png" alt="logo lady's vtc">
+      <ul class="links">
+        <li><a href="index.html"> Accueil &ensp;</a></li>
+        <li><a href="apropos.html"> À propos</a></li>
+        <li><a href="securite.html"> Sécurité</a></li>
+        <li><a href="nous.html">Notre équipe</a></li>
+      </ul>
+      <a href="contacts.html" class="action_btn">Contactez-nous &ensp;</a>
+      <div class="toggle_btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="dropdown_menu">
+      <ul>
+        <li><a href="index.html"> Accueil &ensp;</a></li>
+        <li><a href="apropos.html"> À propos</a></li>
+        <li><a href="securite.html"> Sécurité</a></li>
+        <li><a href="nous.html">Notre équipe</a></li>
+        <li><a href="contacts.html"class="action_btn">Nous Contacter &ensp;</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <div class="btn">
+      <img src="img/fleche.png" alt="Upward arrow" class="icone">
+    </div>
+
+    <main class="main4">
+        <img src="img/securite_1.png" alt="logo sécurite">
+    </main>
+
+    <section class="resume2">
+        <p>
+            La sécurité est au cœur de notre service chez Lady's VTC. Chacun de nos trajets est planifié avec précision
+            pour garantir votre tranquillité d'esprit à chaque étape du voyage.
+        </p>
+        <p>
+            Nous mettons un accent particulier sur la sécurité. Nos conductrices expérimentées sont soigneusement
+            sélectionnées, formées et régulièrement évaluées pour assurer un niveau élevé de professionnalisme et de
+            fiabilité.
+        </p>
+    </section>
+
+    <aside>
+        <img src="img/securite_2.png" alt="valeurs" class="article-img-4">
+    </aside>
+
+    <section class="titre0">
+        <h2>Notre Priorité</h2>
+    </section>
+
+	  <main class="main3">
+      <article>
+        <ul>
+          <li>
+            Chez nous, votre sécurité est notre priorité absolue. Tous nos véhicules sont équipés des 
+            dernières technologies de suivi en temps réel, garantissant un suivi continu et une réaction
+            rapide en cas de besoin. Des vérifications approfondies des antécédents de nos chauffeuses à 
+            des protocoles de sécurité stricts, nous nous engageons à offrir des déplacements sans 
+            compromis en matière de sécurité.
+          </li>
+          <li>
+            Optez pour la tranquillité d'esprit avec nos véhicules qui sont régulièrement entretenus et 
+            respectent les normes de sécurité les plus strictes, assurant ainsi un environnement sûr et 
+            confortable pour chaque passagère.
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <script>
+      // controler le menu burger
+  
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fas fa-times"
+          : "fas fa-bars";
+      };
+  
+      //monter avec la fléche
+  
+      const btn = document.querySelector('.btn');
+  
+      btn.addEventListener('click', () => {
+  
+      window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+      })
+  
+  })
+    </script>
+
+<footer>
+  <div class="content-footer">
+    <div class="bloc footer-services">
+      <h3>Entreprise</h3>
+      <ul class="services-list">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="securite.html">Sécurité</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+    </div>
+    <div class="bloc footer-contact">
+      <h3>Nous contacter</h3>
+      <ul>
+        <li><a href="contacts.html">Contacts</a></li>
+        <li><a href="nous.html">Notre équipe</a></li>
+      </ul>
+    </div>
+    <div class="bloc footer-schedule">
+      <h3>Nos Réseaux Sociaux</h3>
+      <ul class="schedule-list">
+        <li><a href="https://www.facebook.com/profile.php?id=61555559045664"><img src="img/facebook_logo.png" alt="logo facebook"></a></li>
+        <li><a href="https://twitter.com/Ladys_vtc"><img src="img/twitter_logo.png" alt="logo twitter"></a></li>
+        <li><a href="https://www.instagram.com/ladys_vtc?igsh=MXgwODd4emNnZXpp"><img src="img/instagram_logo.png" alt="logo instagram"></a></li>
+        <li><a href="https://www.linkedin.com/in/ladys-vtc-0718a22aa/"><img src="img/linkedin_logo.png" alt="logo LinkedIn"></a></li>
+        <li><a href="https://www.u-pec.fr/servlet/com.univ.collaboratif.utils.LectureFichiergw?ID_FICHIER=1259768723400&ID_FICHE=7357"><img src="img/logo_upec.png" alt="logo upec"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer1">
+    <img src="img/logo.png" alt="logo lady's vtc">
+    <p>
+      © 2024 Lady's VTC. Tous droits réservés.
+    </p>
+    <p>
+      Crée par Hamza Bazzaou et Blehoue Marc-Aurel Bourbier-Damoh
+    </p>
+  </div>
+</footer>
+</body>
+</html>

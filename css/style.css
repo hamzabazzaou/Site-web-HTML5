@@ -1,0 +1,1225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Début Index */
+
+/* header */
+
+header {
+  position: relative;
+  padding: 0 2rem;
+  height: 70px;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  height: 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header img {
+  width: 150px;
+  background-color: black;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li,
+.dropdown_menu li {
+  list-style: none;
+}
+
+.navbar a,
+.dropdown_menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: purple;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: white;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+.dropdown_menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+  height: 240px;
+  margin-top: 20px;
+  background-color: rgb(91, 79, 79);
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* main0 */
+
+.main0 {
+  display: flex;
+  background-color: black;
+}
+
+.main0 aside img {
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.main0 article h2 {
+  float: right;
+  margin-top: 100px;
+  margin-left: 300px;
+  font-size: 60px;
+  margin-right: 250px;
+  color: white;
+}
+
+/* gérer l'image offre */
+
+article {
+  display: flex;
+}
+
+article img {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+
+/* test fleche*/
+
+.btn {
+  height: 100px;
+  width: 100px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icone {
+  width: 50px;
+}
+
+/* services */
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.delivery-icon {
+  font-size: 50px;
+  color: black;
+}
+
+.service-details {
+  font-weight: 600;
+  width: 200px;
+  text-align: center;
+}
+
+section div p {
+  margin-top: 15px;
+}
+
+/* gérer le titre0 */
+
+.titre0 {
+  display: flex;  
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: 50px;
+  margin-right: 250px;
+}
+
+/* gérer le main1 */
+
+.main1 {
+  display: flex;
+  background-color: white;
+}
+
+.article-img-1 {
+  margin-bottom: 30px;
+  width: 500px;
+  margin-left: 300px;
+}
+
+.main1 ul {
+  list-style: none;
+  width: 100%;
+}
+
+.main1 li {
+  position: relative;
+  top: 60px;
+  font-size: 45px;
+  margin-top: 20px; 
+  margin-left: 200px;
+  font-family: "Montserrat";
+  color: black;
+}
+
+.a1 {
+  color: black;
+}
+
+/* Fin Index */
+
+
+/* Début À propos */
+
+/* gérer le main2 */
+
+.main2 img {
+  width: 100%;
+}
+
+/* resume 1 */
+
+.resume1 {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 80px;
+  font-size: 30px;
+}
+
+/* gérer image à propos 2 */
+
+.article-img-2 {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+/* gérer le titre */
+
+.titre {
+  display: flex;  
+  margin-top: 100px;
+  margin-left: 90px;
+  font-size: 50px;
+  margin-right: 250px;
+}
+
+/* gérer le main3 */
+
+.main3 {
+  display: flex;
+  background-color: white;
+}
+
+.main3 li {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px;
+  font-size: 30px;
+}
+
+/* gérer image à propos 3 */
+
+.article-img-3 {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+
+/* Fin À propos */
+
+
+/* Début Sécurité */
+
+/* gérer le main4 */
+
+.main4 img{
+  width: 100%;
+}
+
+/* resume 2 */
+
+.resume2 p {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 80px;
+  font-size: 30px;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* gérer image securite 2 */
+
+.article-img-4 {
+  width: 800px;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+/* Fin Sécurité */
+
+
+/* Début footer */
+
+/* gérer le footer */
+
+footer {
+  flex-shrink: 0;
+  border-top: 1px dashed  black;
+  width: 100%;
+  background: #fff;
+  color: #333;
+}
+
+.content-footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 16px;
+  padding: 50px 0 100px;
+}
+
+.bloc {
+  flex-basis: 20%;
+  margin: 0 30px;
+}
+
+/* contact */
+
+.footer-contact h3,
+.footer-services h3,
+.footer-schedule h3,
+.footer-medias h3 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.footer-contact p {
+  padding: 5px 0;
+}
+
+/* Services */
+
+li img {
+  justify-content: space-evenly;
+  margin: 5px;
+  width: 50px;
+}
+
+.services-list,
+.schedule-list,
+.media-list {
+  list-style-type: none;
+}
+
+.services-list li {
+  padding: 2px 0;
+}
+
+.services-list a {
+  text-decoration: none;
+  color: #333;
+}
+
+.services-list a:hover {
+  color:   black;
+}
+
+li {
+  color:  black;
+}
+
+li a {
+  color:  black;
+  text-decoration: none;
+}
+
+.footer1{
+  flex-direction: column;
+  margin-left: 400px;
+  margin-bottom: 100px;
+}
+
+.footer1 img {
+  width: 500px;
+}
+
+
+/* Fin Footer */
+
+
+/* Début page contact */
+
+/* Gérer page contact */
+
+.contact-container {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto; 
+  border-radius: 8px; 
+}
+
+.contact-container textarea {
+  height: 130px;
+  resize: vertical; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  margin-bottom: 16px;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #ffffff;
+  cursor: pointer;
+  border: none; 
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Fin contact */
+
+
+
+
+/* Début Notre Équipe */
+
+.equipe{
+  margin-left: 200px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer le contenu horizontalement */
+  margin-bottom: 20px; /* Espacement entre les sections */
+}
+
+/* Première section */
+.hmz img {
+  width: 400px;
+}
+
+.hmzcv {
+  font-size: 20px;
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+}
+
+/* Deuxième section */
+.marc img {
+  width: 400px;
+}
+
+.marccv {
+  font-size: 20px;
+  margin-top: 10px; /* Espacement entre l'image et le texte */
+}
+
+/* bouton visualiser / imprimer le cv*/
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.view-button {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #FFA500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fin Notre Équipe */
+
+
+
+/* Début CV */
+
+/* CV1 hamza */
+
+
+.cv-container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-container1 h1{
+  margin-left: 250px;
+  color: black;
+}
+
+.cv-container1 h2{
+  color: blue;
+}
+
+.cv-container1 h3 {
+  color: rgb(19, 133, 239);
+}
+
+.cv-container1 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cv-container1 ul li {
+  margin-bottom: 10px;
+}
+
+.date {
+  display: inline-block;
+  margin: 0;
+}
+
+.job {
+  margin-bottom: 20px;
+}
+
+.projet {
+  margin-top: 20px;
+}
+
+/* bouton imprimer le cv*/
+
+.button-container2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.print-button2 {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #28A745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* CV2 marc-aurel */
+
+
+.cv-container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cv-container2 h1{
+  margin-left: 70px;
+  color: black;
+}
+
+.cv-container2 h2{
+  color: blue;
+}
+
+.cv-container2 h3 {
+  color: rgb(19, 133, 239);
+}
+
+.cv-container2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cv-container2 ul li {
+  margin-bottom: 10px;
+}
+
+/* bouton imprimer le cv*/
+
+.button-container2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.print-button2 {
+  padding: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #28A745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Fin CV */
+
+@media print {
+  .print-button2 {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28A745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+/* Début des media queries */
+
+/* media queries 1024px */
+
+@media (max-width: 1024px) {
+  .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+  /* main0 */
+
+  .main0{
+    flex-direction: column;
+  }
+
+  .main0 aside img {
+    margin-left: 350px;
+  }
+
+  .main0 article h2 {
+    float: left;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+  } 
+
+  /* gérer l'image offre */
+
+  article img {
+    width: 500px;
+    margin-left: 300px;
+  }
+
+  /* gérer le titre */
+
+  .titre0 {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 100px;
+  }
+
+  /* gérer le main1 */
+
+  .article-img-1 {
+    width: 350px;
+    margin-left: 300px;
+    margin-top: 30px;
+  }
+
+  .main1 li {
+    margin-left: 100px;
+  }
+
+  /* Fin Index */
+
+
+  /* Début À propos */
+
+  /* resume 1 */
+
+  .resume1 {
+    text-align: none;
+    font-size: 20px;
+  } 
+ 
+  /* gérer image à propos 2 */
+
+  .article-img-2 {
+    width: 500px;
+    margin-left: 300px;
+  }
+
+  /* gérer le titre */
+
+  .titre {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 100px;
+  }
+
+  /* gérer le main3 */
+
+ .main3 li {
+    top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+  } 
+
+  /* gérer image à propos 3 */
+
+  .article-img-3 {
+    width: 500px;
+    margin-left: 300px;
+  }
+
+  /* Fin À propos */
+  
+  
+  /* Début Sécurité */
+  
+  /* resume 2 */
+
+  .resume2 p {
+    text-align: none;
+    font-size: 20px;
+  } 
+
+  /* gérer image securite 2 */
+
+  .article-img-4 {
+    width: 500px;
+    margin-left: 300px;
+  }
+  
+  /* Fin Sécurité */
+
+
+  /* Début footer */
+
+  /* gérer le footer */
+
+  .content-footer {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* contact */
+
+  .footer-contact h3,
+  .footer-services h3,
+  .footer-schedule h3,
+  .footer-medias h3 {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Services */
+
+  li img {
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 50px;
+  }
+
+  .footer1{
+    margin-left: 300px;
+  }
+  
+  .footer1 img {
+    width: 300px;
+  }
+}
+
+
+/* media queries 768px */
+
+@media (max-width: 768px) {
+
+  /* main0 */
+
+  .main0{
+    flex-direction: column;
+  }
+
+  .main0 aside img {
+    margin-left: 250px;
+    width: 350px;
+  }
+
+  .main0 article h2 {
+    float: left;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 30px;
+  } 
+
+  /* gérer l'image offre */
+
+  article img {
+    width: 350px;
+    margin-left: 200px;
+  }
+
+  /* services */
+
+  .services {
+    flex-direction: column;
+  }
+
+  /* gérer le titre */
+
+  .titre0 {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 200px;
+  }
+
+  /* gérer le main1 */
+
+  .main1 {
+    flex-direction: column;
+  }
+  
+  .article-img-1 {
+    width: 350px;
+    margin-left: 200px;
+    margin-top: 30px;
+  }
+
+  .main1 li {
+    top: 20px;
+    margin-left: 200px;
+    font-size: 20px;
+
+  }
+
+  /* Fin Index */
+
+
+  /* Début À propos */
+
+  /* resume 1 */
+
+  .resume1 {
+    text-align: none;
+    font-size: 20px;
+  } 
+ 
+  /* gérer image à propos 2 */
+
+  .article-img-2 {
+    width: 350px;
+    margin-left: 230px;
+  }
+
+  /* gérer le titre */
+
+  .titre {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 50px;
+  }
+
+  /* gérer le main3 */
+
+ .main3 li {
+    top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+  } 
+
+  /* gérer image à propos 3 */
+
+  .article-img-3 {
+    width: 350px;
+    margin-left: 200px;
+  }
+
+  /* Fin À propos */
+  
+  
+  /* Début Sécurité */
+  
+  /* resume 2 */
+
+  .resume2 p {
+    text-align: none;
+    font-size: 20px;
+  } 
+
+  /* gérer image securite 2 */
+
+  .article-img-4 {
+    width: 350px;
+    margin-left: 200px;
+  }
+
+  
+  /* Fin Sécurité */
+
+
+  /* Début footer */
+
+  /* gérer le footer */
+
+  .content-footer {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* contact */
+
+  .footer-contact h3,
+  .footer-services h3,
+  .footer-schedule h3,
+  .footer-medias h3 {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Services */
+
+  li img {
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 50px;
+  }
+
+  .footer1{
+    margin-left: 240px;
+    font-size: 20px;
+  }
+  
+  .footer1 img {
+    width: 300px;
+  }
+
+  /* Début Notre Équipe */
+
+  .equipe{
+   margin-left: 100px;
+  }
+}
+
+
+/* media queries 480px */
+
+@media (max-width: 480px) {
+
+  /* main0 */
+
+  .main0{
+    flex-direction: column;
+  }
+
+  .main0 aside img {
+    margin-left: 30px;
+  }
+
+  .main0 article h2 {
+    float: left;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 300px;
+    font-size: 30px;
+  } 
+
+  /* gérer l'image offre */
+
+  article img {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  /* services */
+  
+  .services {
+    height: 500px;
+  }
+
+  /* test fleche*/
+
+  .btn {
+    display: none;
+  }
+
+  .icone {
+    display: none;
+  }
+
+  /* gérer le titre */
+
+  .titre0 {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-left: 100px;
+  }
+
+  /* gérer le main1 */
+
+  .main1 {
+    flex-direction: column;
+  }
+  
+  .article-img-1 {
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  .main1 li {
+    top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+
+  }
+
+  /* Fin Index */
+
+
+  /* Début À propos */
+
+  /* resume 1 */
+
+  .resume1 {
+    text-align: none;
+    font-size: 20px;
+  } 
+ 
+  /* gérer image à propos 2 */
+
+  .article-img-2 {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  /* gérer le titre */
+
+  .titre {
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 50px;
+  }
+
+  /* gérer le main3 */
+
+ .main3 li {
+    top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+  } 
+
+  /* gérer image à propos 3 */
+
+  .article-img-3 {
+    width: 300px;
+    margin-left: 100px;
+  }
+
+  /* Fin À propos */
+  
+  
+  /* Début Sécurité */
+  
+  /* resume 2 */
+
+  .resume2 p {
+    text-align: none;
+    font-size: 20px;
+  } 
+
+  /* gérer image securite 2 */
+
+  .article-img-4 {
+    width: 300px;
+    margin-left: 100px;
+  }
+  
+  /* Fin Sécurité */
+
+
+  /* Début footer */
+
+  /* gérer le footer */
+
+  .content-footer {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* contact */
+
+  .footer-contact h3,
+  .footer-services h3,
+  .footer-schedule h3,
+  .footer-medias h3 {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+
+  /* Services */
+
+  li img {
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 50px;
+  }
+
+  .footer1{
+    margin-left: 100px;
+    font-size: 20px;
+  }
+  
+  .footer1 img {
+    width: 200px;
+  }
+
+  /* Début Notre Équipe */
+
+  .equipe{
+   margin-left: 70px;
+  }
+
+  /* Début CV */
+
+  /* CV1 hamza */
+
+  .cv-container1 h1{
+    margin-left: 90px;
+  }
+
+  /* CV2 marc-aurel */
+
+  .marccv ul li {
+    margin-left: 10px;
+  }
+}
